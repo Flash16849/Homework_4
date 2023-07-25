@@ -11,26 +11,6 @@ pen.canvas.width = WIDTH;
 pen.canvas.height = HEIGHT;
 canvas.style.border = "2px solid black";
 
-function blueCircle(size){
-    pen.beginPath();
-    pen.lineWidth = 2;
-    pen.arc(WIDTH/2, HEIGHT/2, size, 0, 2*Math.PI);
-    pen.fillStyle = "blue";
-    pen.fill();
-    pen.strokeStyle = "blue";
-    pen.stroke();
-    pen.closePath();
-}
-
-
-
-function blackCircle(){
-    pen.beginPath();
-    pen.arc(WIDTH/2, HEIGHT/2, 10, 0, 2*Math.PI);
-    pen.fillStyle = "black";
-    pen.fill();
-    pen.closePath();
-}
 
 function clear(){
     pen.clearRect(0, 0, WIDTH, HEIGHT);
